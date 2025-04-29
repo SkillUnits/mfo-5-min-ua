@@ -56,12 +56,12 @@ $(document).ready(function (){
         let percentSale = parseInt(money) * 0.01 * days;
         let getMoney = parseInt(money) + percent;
         let getMoneySale = parseInt(money) + percentSale;
-        $('.money-current').html(money + '<span> тнг</span>');
+        $('.money-current').html(money + '<span> грн</span>');
 
         let moneyTake = Math.round(money).toLocaleString('en-US');
         moneyTake = moneyTake.replace(/,/g, " ");
-        $('.information.take .money').text(moneyTake + ' тнг');
-        // $('.button-main .money-btn').text(moneyTake + ' тнг');
+        $('.information.take .money').text(moneyTake + ' грн');
+        // $('.button-main .money-btn').text(moneyTake + ' грн');
 
         // let percentVal = Math.round(percent).toLocaleString('en-US');
         let percentVal = percent.toLocaleString('en-US');
