@@ -32,7 +32,7 @@ class Action {
 }
 
 const haveCreditsFlow = new Flow([
-    new OperMessage("Виберіть компанії, в яких у вас були позики:", null, new Action(Action.showOffers, null)),
+    new OperMessage("Виберіть компанії, в яких у вас були позики:", null, new Action(Action.showCurrentOffers, null)),
     new OperMessage("Яку суму ви хотіли б отримати?", [
         new Answer("До 20.000 грн", null, "amount_select_100"),
         new Answer("20.000 - 40.000 грн", null, "amount_select_100-300"),
