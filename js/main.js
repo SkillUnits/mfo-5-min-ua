@@ -3,7 +3,7 @@ $(document).ready(function (){
 
     $('#summ_slider').ionRangeSlider({
         min: 10000,
-        max: 500000,
+        max: 200000,
         from: 75000,
         step: 500,
         hide_min_max: true,
