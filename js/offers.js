@@ -11,21 +11,21 @@ const moneySymbols = ["💵", "💰", "💸", "💳", "💶", "💷"];
 
 // Динамически загружаем только те оферы, которые есть в массиве offerIdsArray
 const offersData = {
-    44: new Offer(logo="/images/banks/tengo.png", url="{offer}&offer_id=44", duration="15 д", interest="0.1%"),
-    45: new Offer(logo="/images/banks/miloan.svg", url="{offer}&offer_id=45", duration="30 дн", interest="0.01%"),
-    46: new Offer(logo="/images/banks/Mycredit.svg", url="{offer}&offer_id=46", duration="30 дн", interest="3.99%"),
-    47: new Offer(logo="/images/banks/slon.png.svg", url="{offer}&offer_id=47", duration="30 дн", interest="0.01%"),
-    48: new Offer(logo="/images/banks/credit7.svg", url="{offer}&offer_id=48", duration="30 дн", interest="0.1%"),
-    49: new Offer(logo="/images/banks/Pango_logo.png.svg", url="{offer}&offer_id=49", duration="36 0 дн", interest="0.1%"),
-    50: new Offer(logo="/images/banks/FirstCredit.svg", url="{offer}&offer_id=50", duration="30 дн", interest="0.01%"),
-    51: new Offer(logo="/images/banks/finsfera.png.svg", url="{offer}&offer_id=51", duration="360 дн", interest="0.1%"),
-    52: new Offer(logo="/images/banks/starfin.png.svg", url="{offer}&offer_id=52", duration="120 дн", interest="0.29%"),
+    44: new Offer(logo="/images/banks/tengo.png", url="{offer}&offer_id=44", duration="до 25000грн", interest="0.1%"),
+    45: new Offer(logo="/images/banks/miloan.svg", url="{offer}&offer_id=45", duration="до 25000грн", interest="0.01%"),
+    46: new Offer(logo="/images/banks/Mycredit.svg", url="{offer}&offer_id=46", duration="до 35 000грн", interest="3.99%"),
+    47: new Offer(logo="/images/banks/slon.png.svg", url="{offer}&offer_id=47", duration="до 32000грн", interest="0.01%"),
+    48: new Offer(logo="/images/banks/credit7.svg", url="{offer}&offer_id=48", duration="до 40000грн", interest="0.1%"),
+    49: new Offer(logo="/images/banks/Pango_logo.png.svg", url="{offer}&offer_id=49", duration="до 25000грн", interest="0.1%"),
+    50: new Offer(logo="/images/banks/FirstCredit.svg", url="{offer}&offer_id=50", duration="до 20000грн", interest="0.01%"),
+    51: new Offer(logo="/images/banks/finsfera.png.svg", url="{offer}&offer_id=51", duration="до 15000грн", interest="0.1%"),
+    52: new Offer(logo="/images/banks/starfin.png.svg", url="{offer}&offer_id=52", duration="до 20000грн", interest="0.29%"),
 
-    53: new Offer(logo="/images/banks/loan.svg", url="{offer}&offer_id=53", duration="80 дн", interest="0.01%"),
-    54: new Offer(logo="/images/banks/CreditPlus-Logo.svg", url="{offer}&offer_id=54", duration="30 дн", interest="0.01%"),
-    55: new Offer(logo="/images/banks/monyveo.png", url="{offer}&offer_id=55", duration="30 дн", interest="0.1%"),
-    56: new Offer(logo="/images/banks/fastmoney.svg", url="{offer}&offer_id=56", duration="217 дн", interest="0.1%"),
-    57: new Offer(logo="/images/banks/creditkasa.jpg.svg", url="{offer}&offer_id=57", duration="300 дн", interest="0.1%"),
+    53: new Offer(logo="/images/banks/loan.svg", url="{offer}&offer_id=53", duration="до 20000грн", interest="0.01%"),
+    54: new Offer(logo="/images/banks/CreditPlus-Logo.svg", url="{offer}&offer_id=54", duration="до 40000грн", interest="0.01%"),
+    55: new Offer(logo="/images/banks/monyveo.png", url="{offer}&offer_id=55", duration="до 40000грн", interest="0.1%"),
+    56: new Offer(logo="/images/banks/fastmoney.svg", url="{offer}&offer_id=56", duration="до 50000грн", interest="0.1%"),
+    57: new Offer(logo="/images/banks/creditkasa.jpg.svg", url="{offer}&offer_id=57", duration="до 55000", interest="0.1%"),
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     var offersIds = urlParams.get("offers_ids");  // например, "zaimerkz,moneymankz,onecreditkz"
     if (!offersIds) {
-        offersIds="44 45 22 20 10 12 14 16";
+        offersIds="44 45 46 47 48 49 50 51 52 53 54 55 56 57";
     }
 
     const offerIdsArray = offersIds.split(' ');

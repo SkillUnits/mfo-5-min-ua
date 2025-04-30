@@ -55,7 +55,7 @@ const noCreditsFlow = new Flow([
 // Flows
 const mainFlow = new Flow([
     new OperMessage("Доброго дня 👋", null, null),
-    new OperMessage("Мене звуть Аружан, я знайду для вас найкращу пропозицію по мікропозиціях.", null, null),
+    new OperMessage("Мене звуть Олексій, я знайду для вас найкращу пропозицію по мікропозиціях.", null, null),
     new OperMessage("Чи були у вас коли-небудь мікропозики?", [
         new Answer("Так", new Action(Action.actionChangeFlow, haveCreditsFlow), "have_credits"),
         new Answer("Ні", new Action(Action.actionChangeFlow, noCreditsFlow), "no_credits"),
