@@ -34,9 +34,9 @@ class Action {
 const haveCreditsFlow = new Flow([
     new OperMessage("Виберіть компанії, в яких у вас були позики:", null, new Action(Action.showCurrentOffers, null)),
     new OperMessage("Яку суму ви хотіли б отримати?", [
-        new Answer("До 100.000 грн", null, "amount_select_100"),
-        new Answer("100.000 - 300.000 грн", null, "amount_select_100-300"),
-        new Answer("Більше 300.000 грн 💰", null, "amount_select_300+"),
+        new Answer("До 20.000 грн", null, "amount_select_100"),
+        new Answer("20.000 - 40.000 грн", null, "amount_select_100-300"),
+        new Answer("Більше 40.000 грн 💰", null, "amount_select_300+"),
     ], null),
     new OperMessage("Чудово! Я проводжу автоматичну верифікацію", null, null),
     new OperMessage("🎉🎁💰 Вам попередньо схвалено запитуваний кредит. Його можна отримати в цих організаціях:", null, new Action(Action.showOffers, null))
@@ -44,9 +44,9 @@ const haveCreditsFlow = new Flow([
 
 const noCreditsFlow = new Flow([
     new OperMessage("Яку суму ви хотіли б отримати?", [
-        new Answer("До 100.000 грн", null, "amount_select_100"),
-        new Answer("100.000 - 300.000 грн", null, "amount_select_100-300"),
-        new Answer("Більше 300.000 грн 💰", null, "amount_select_300+"),
+        new Answer("До 20.000 грн", null, "amount_select_100"),
+        new Answer("20.000 - 40.000 грн", null, "amount_select_100-300"),
+        new Answer("Більше 40.000 грн 💰", null, "amount_select_300+"),
     ], null),
     new OperMessage("Чудово! Я проводжу автоматичну верифікацію", null, null),
     new OperMessage("🎉🎁💰 Вам попередньо схвалено запитуваний кредит. Його можна отримати в цих організаціях:", null, new Action(Action.showOffers, null))
@@ -55,7 +55,7 @@ const noCreditsFlow = new Flow([
 // Flows
 const mainFlow = new Flow([
     new OperMessage("Доброго дня 👋", null, null),
-    new OperMessage("Мене звуть Олексій, я знайду для вас найкращу пропозицію по мікропозиціях.", null, null),
+    new OperMessage("Мене звуть Олексій, я знайду для вас найкращу пропозицію по мікропозиках.", null, null),
     new OperMessage("Чи були у вас коли-небудь мікропозики?", [
         new Answer("Так", new Action(Action.actionChangeFlow, haveCreditsFlow), "have_credits"),
         new Answer("Ні", new Action(Action.actionChangeFlow, noCreditsFlow), "no_credits"),
