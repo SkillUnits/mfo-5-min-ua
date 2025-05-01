@@ -204,7 +204,7 @@ function handleAction(action) {
             showOffersSelect(true)
             break;
         case Action.showOffers:
-            showOffersResult(true, ["45", "55", "56", "50"]);
+            showOffersResult(true, ["45", "55", "63", "56", "64", "50"]);
             break;
     }
 }

@@ -26,6 +26,8 @@ const offersData = {
     55: new Offer(logo="/images/banks/monyveo.png", url="{offer}&offer_id=55", duration="до 40000грн", interest="0.1%"),
     56: new Offer(logo="/images/banks/fastmoney.svg", url="{offer}&offer_id=56", duration="до 50000грн", interest="0.1%"),
     57: new Offer(logo="/images/banks/creditkasa.jpg.svg", url="{offer}&offer_id=57", duration="до 55000", interest="0.1%"),
+    63: new Offer(logo="/images/banks/tvoigro.png.svg", url="{offer}&offer_id=63", duration="до 1500000грн", interest="1%"),
+    64: new Offer(logo="/images/banks/e_groshi.svg", url="{offer}&offer_id=64", duration="до 20000грн", interest="0.1%"),
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     var offersIds = urlParams.get("offers_ids");  // например, "zaimerkz,moneymankz,onecreditkz"
     if (!offersIds) {
-        offersIds="44 45 46 47 48 49 50 51 52 53 54 55 56 57";
+        offersIds="44 45 46 47 48 49 50 51 52 53 54 55 56 57 63 64";
     }
 
     const offerIdsArray = offersIds.split(' ');
