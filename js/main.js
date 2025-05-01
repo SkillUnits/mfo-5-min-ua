@@ -2,9 +2,9 @@ $(document).ready(function (){
     $('#phone-main').mask("+7 (000) 000-00-00", {placeholder: "+7 (xxx) xxx-xx-xx"});
 
     $('#summ_slider').ionRangeSlider({
-        min: 10000,
-        max: 200000,
-        from: 75000,
+        min: 5000,
+        max: 55000,
+        from: 15000,
         step: 500,
         hide_min_max: true,
         hide_from_to: true,

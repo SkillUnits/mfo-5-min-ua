@@ -711,7 +711,7 @@ ul li {
     font-weight: 400;
     color: #080B1A;
     opacity: 1;
-    width: calc(60% - 5px);
+    width: calc(70% - 5px);
     text-align: right;
 }
 .main .third_page .offer .offer-info li .bold.colored {

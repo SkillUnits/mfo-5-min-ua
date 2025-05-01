@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </a>
             <ul class="offer-info">
                 <li>
-                <span class="text">Термін до:</span>
+                <span class="text">Сума:</span>
                 <span class="bold">${offerData.duration}</span>
                 </li>
                 <li>
