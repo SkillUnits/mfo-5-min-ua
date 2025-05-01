@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     var offersIds = urlParams.get("offers_ids");  // например, "zaimerkz,moneymankz,onecreditkz"
     if (!offersIds) {
-        offersIds="44 45 46 47 48 49 50 51 52 53 54 55 56 63 64";
+        offersIds="45 55 63 56 64 50";
     }
 
     const offerIdsArray = offersIds.split(' ');
