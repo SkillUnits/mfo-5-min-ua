@@ -204,7 +204,7 @@ function handleAction(action) {
             showOffersSelect(true)
             break;
         case Action.showOffers:
-            showOffersResult(true)
+            showOffersResult(true, ["56", "63", "50", "44", "54", "53"]);
             break;
     }
 }
@@ -233,13 +233,18 @@ function showOffersSelect(show) {
     scrollToBottom();
 }
 
-function showOffersResult(show) {
-    for (const element of userOffers) {
-        const view = document.getElementById("offer-" + element);
-        if (view) {
-            view.style.display = "none";
+function showOffersResult(show, filteredOfferIds = null) {
+    const allOfferElements = document.querySelectorAll('[id^="offer-"]');
+
+    allOfferElements.forEach(el => {
+        const offerId = el.id.replace("offer-", "");
+        // Якщо список офферів заданий — показуємо тільки їх
+        if (filteredOfferIds && !filteredOfferIds.includes(offerId)) {
+            el.style.display = "none";
+        } else {
+            el.style.display = show ? "block" : "none";
         }
-    }
+    });
 
     document.getElementById("offers-result").style.display = show ? "block" : "none";
 }

@@ -25,7 +25,6 @@ const offersData = {
     54: new Offer(logo="/images/banks/CreditPlus-Logo.svg", url="{offer}&offer_id=54", duration="до 40000грн", interest="0.01%"),
     55: new Offer(logo="/images/banks/monyveo.png", url="{offer}&offer_id=55", duration="до 40000грн", interest="0.1%"),
     56: new Offer(logo="/images/banks/fastmoney.svg", url="{offer}&offer_id=56", duration="до 50000грн", interest="0.1%"),
-    // 57: new Offer(logo="/images/banks/creditkasa.jpg.svg", url="{offer}&offer_id=57", duration="до 55000", interest="0.1%"),
     63: new Offer(logo="/images/banks/tvoigro.png.svg", url="{offer}&offer_id=63", duration="до 1500000грн", interest="1%"),
     64: new Offer(logo="/images/banks/e_groshi.svg", url="{offer}&offer_id=64", duration="до 20000грн", interest="0.1%"),
 };
