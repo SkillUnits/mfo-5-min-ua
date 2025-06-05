@@ -27,6 +27,16 @@ const offersData = {
     56: new Offer(logo="/images/banks/fastmoney.svg", url="{offer}&offer_id=56", duration="до 50000грн", interest="0.1%"),
     63: new Offer(logo="/images/banks/tvoigro.png.svg", url="{offer}&offer_id=63", duration="до 1500000грн", interest="1%"),
     64: new Offer(logo="/images/banks/e_groshi.svg", url="{offer}&offer_id=64", duration="до 20000грн", interest="0.1%"),
+    
+    86: new Offer(logo="/images/banks/extratraf_ua.svg”, url="{offer}&offer_id=86", сума="до 40000грн", interest="0.1%"),
+    87: new Offer(logo="/images/banks/pan_groshi_ua.svg”, url="{offer}&offer_id=87", сума="до 50000грн", interest="0.01%"),
+    88: new Offer(logo="/images/banks/creditnice_(1)_ua.svg”, url="{offer}&offer_id=88", сума="до 100000грн", interest="0.1%"),
+    89: new Offer(logo="/images/banks/best_credit_ua.svg”, url="{offer}&offer_id=89", сума="до  100000грн", interest="0.01%"),
+    90: new Offer(logo="/images/banks/fast_credit_ua.svg”, url="{offer}&offer_id=90", сума="до 20000грн", interest="0.1%"),
+    91: new Offer(logo="/images/banks/shvidko_groshi_ua.svg”, url="{offer}&offer_id=91", сума="до 40000”, interest="0.1%"),
+    92: new Offer(logo="/images/banks/binixo-2_ua.svg”, url="{offer}&offer_id=92", сума="до 15000грн", interest="0.01%"),
+    93: new Offer(logo="/images/banks/Logo_Fina_Guru_horizontal_ua.svg”, url="{offer}&offer_id=93", сума="до 50000грн", interest="0.1%"),
+    94: new Offer(logo="/images/banks/credityes_ua.svg”, url="{offer}&offer_id=94", сума="до 50000грн ", interest="0.1%"),
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -34,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     var offersIds = urlParams.get("offers_ids");  // например, "zaimerkz,moneymankz,onecreditkz"
     if (!offersIds) {
-        offersIds="44 45 46 47 48 49 50 51 52 53 54 55 56 63 64";
+        offersIds="44 45 46 47 48 49 50 51 52 53 54 55 56 63 64 86 87 88 89 90 91 92 93 94";
     }
 
     const offerIdsArray = offersIds.split(' ');
